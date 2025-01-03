@@ -4,19 +4,26 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/eslint'],
   
+  
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-
-css: ['@/assets/scss/main.scss'],
-
-components: [
-  {
-    path: '~/components/',
-    pathPrefix: false,
-  }
-],
-
+  
+  css: ['@/assets/scss/main.scss'],
+  
+  components: [
+    {
+      path: '~/components/',
+      pathPrefix: false,
+    }
+  ],
+  
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   vite: {
     css: {
       preprocessorOptions: {
