@@ -1,75 +1,126 @@
-# Nuxt Minimal Starter
+# Nuxt 3 Template Project
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Une template de démarrage pour les projets Nuxt 3, préconfigurée avec TypeScript, Tailwind CSS, et SCSS.
 
-## Setup
+## Technologies
 
-Make sure to install dependencies:
+- [Nuxt 3](https://nuxt.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [SCSS](https://sass-lang.com/)
+- [ESLint](https://eslint.org/)
 
+## Structure du projet
+
+```
+.
+├── assets/
+│   ├── css/
+│   │   ├── normalize.css
+│   │   └── main.scss
+├── components/
+├── composables/
+├── layouts/
+├── pages/
+├── public/
+├── .eslintrc
+├── .gitignore
+├── nuxt.config.ts
+├── tailwind.config.js
+├── tsconfig.json
+└── package.json
+```
+
+## Prérequis
+
+- Node.js (version 16 ou supérieure)
+- npm ou yarn ou pnpm
+
+## Installation
+
+1. Cloner le repository :
 ```bash
-# npm
+git clone [url-du-repo]
+cd [nom-du-projet]
+```
+
+2. Installer les dépendances :
+```bash
+# Avec npm
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
+# Avec yarn
 yarn install
 
-# bun
-bun install
+# Avec pnpm
+pnpm install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+3. Lancer le serveur de développement :
 ```bash
-# npm
+# Avec npm
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
+# Avec yarn
 yarn dev
 
-# bun
-bun run dev
+# Avec pnpm
+pnpm dev
 ```
 
-## Production
+## Fonctionnalités
 
-Build the application for production:
+- ⚡️ Configuration Nuxt 3 avec TypeScript
+- 🎨 Intégration Tailwind CSS avec configuration personnalisée
+- 💅 Support SCSS pour des styles avancés
+- 🧹 ESLint configuré pour un code propre et cohérent
+- 📱 Structure de dossiers optimisée pour une scalabilité facile
+- 🔧 normalize.css pour une base cohérente entre les navigateurs
+
+## Scripts disponibles
 
 ```bash
-# npm
+# Développement
+npm run dev
+
+# Build production
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
+# Aperçu de la version de production
 npm run preview
 
-# pnpm
-pnpm preview
+# Linting
+npm run lint
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
+# Fix les erreurs de linting
+npm run lint:fix
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Personnalisation
+
+### Tailwind CSS
+
+La configuration de Tailwind se trouve dans `tailwind.config.js`. Elle inclut :
+- Des couleurs personnalisées
+- Des breakpoints responsive
+- Des utilitaires d'espacement
+- Des ombres et rayons de bordure personnalisés
+
+### SCSS
+
+Les styles globaux sont gérés via SCSS dans `assets/css/main.scss`. Vous pouvez :
+- Ajouter vos mixins et variables
+- Définir des styles globaux
+- Importer d'autres fichiers SCSS
+
+### ESLint
+
+La configuration ESLint est définie dans `.eslintrc` et peut être personnalisée selon vos besoins.
+
+## Bonnes pratiques
+
+- Organisez vos composants de manière modulaire
+- Utilisez les composables pour la logique réutilisable
+- Suivez les conventions de nommage TypeScript
+- Utilisez les classes utilitaires Tailwind quand possible
+- Réservez SCSS pour les styles complexes
