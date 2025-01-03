@@ -4,6 +4,6 @@ const msg = "Hello World";
 
 <template>
   <div>
-    <h1 class="text-red-700 font-bold text-8xl">{{ msg }}</h1>
+    <h1 class="text-success-light font-bold text-8xl">{{ msg }}</h1>
   </div>
 </template>
